@@ -22,13 +22,13 @@ public class ResponseBodyController {
     }
 
     @GetMapping("/response-body-string-v2")
-    public ResponseEntity<String> responseBodyV2(HttpServletResponse response) {
+    public ResponseEntity<String> responseBodyV2() {
         return new ResponseEntity<>("ok", HttpStatus.OK);
     }
 
     @ResponseBody
     @GetMapping("/response-body-string-v3")
-    public String responseBodyV3(HttpServletResponse response) {
+    public String responseBodyV3() {
         return "ok";
     }
 
